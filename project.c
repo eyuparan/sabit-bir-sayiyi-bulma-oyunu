@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+//12 sayısını bulma programı
+int sayi=1;
+while(sayi!=12){
+printf("1 den baslayarak 20 ye kadar bir sayi giriniz:\n");
+scanf("%d",&sayi);
+//sayı=12 ise dongüden çık
+if(sayi==12){
+printf("dogru sayi\n");
+break;
+}else if(sayi!=12&&sayi<=20){
+printf("dogru deger degil\n");
+}else{
+printf("bu degeri giremessiniz\n");
+}
+}
+    return 0;
+}
